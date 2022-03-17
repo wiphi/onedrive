@@ -2957,7 +2957,7 @@ final class SyncEngine
 						}
 						
 						// we do not want this local file to remain on the local file system
-						safeRemove(path);	
+						safeRename(path);	
 						downloadFailed = true;
 						return;
 					}
